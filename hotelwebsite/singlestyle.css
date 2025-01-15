@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+button {
+    background-color: #ff7043;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+
+.single-room-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.room-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-top: 30px;
+}
+
+.room-item {
+    width: 45%; /
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.room-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.room-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

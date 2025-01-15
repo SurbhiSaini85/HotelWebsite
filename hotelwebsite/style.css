@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.welcome-section {
+    background: #ff7043;
+    color: white;
+    padding: 80px 0;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff7043;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+.rooms-section {
+    background-color: #fff;
+}
+
+.rooms .room {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rooms img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    background-color: #ffebee;
+}
+
+.contact-section {
+    background-color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

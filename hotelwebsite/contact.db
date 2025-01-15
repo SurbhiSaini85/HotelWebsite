@@ -1,0 +1,21 @@
+import sqlite3
+
+# Connect to the SQLite database (it will create the database file if it doesn't exist)
+conn = sqlite3.connect('contact.db')
+cursor = conn.cursor()
+
+# Create a table to store form data (name, email, phone, address, message)
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS contacts (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT NOT NULL,
+        phone TEXT NOT NULL,
+        address TEXT NOT NULL,
+        message TEXT NOT NULL
+    )
+''')
+
+# Commit and close the connection
+conn.commit()
+conn.close()
