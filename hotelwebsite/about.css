@@ -1,61 +1,210 @@
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
 }
 
-.about-us-section {
-    height: 100vh;
-    background-image: url('bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* BODY */
+body {
+    background: #111;
     color: white;
+}
+
+/* ========================= */
+/* 🟠 TOP ORANGE HEADER */
+/* ========================= */
+
+header {
+    background: linear-gradient(135deg, #ff6a00, #ff9f1c);
+    padding: 20px 10px;
     text-align: center;
 }
 
-.about-us-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
-    z-index: -1; 
+/* HOTEL NAME */
+.logo {
+    font-size: 34px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+/* ========================= */
+/* 🟠 ROOMS BUTTON CENTER */
+/* ========================= */
+
+.rooms-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.rooms-btn a {
+    background: white;
+    color: #ff6a00;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.rooms-btn a:hover {
+    background: #000;
+    color: white;
+}
+
+/* ========================= */
+/* ABOUT BANNER (OPTIONAL) */
+/* ========================= */
+
+.about-banner {
+    height: 60vh;
+    background: linear-gradient(135deg, #ff6a00, #ff9f1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.about-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.about-banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.about-banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================= */
+/* ABOUT CONTENT */
+/* ========================= */
+
 .about-content {
-    max-width: 800px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); 
-    border-radius: 10px;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .about-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
 }
 
 .about-content p {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgba(0,0,0,0.6);
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* EXTRA FEATURES */
+/* ========================= */
+
+.extra-info {
+    padding: 60px 20px;
+    text-align: center;
+    background: #222;
+}
+
+.extra-info h2 {
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.box {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: #555;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    background: #000;
     text-align: center;
+    padding: 20px;
 }
